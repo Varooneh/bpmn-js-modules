@@ -131,6 +131,7 @@ Use this package is very very simple and fast.
                 },
 
                 additionalModules: [
+					bpmn.getMiniMapModule(),
 
                     bpm.getColorPickerModule(),
 
@@ -138,10 +139,7 @@ Use this package is very very simple and fast.
 
                     bpm.getPropertiesPanelModule(),
 
-                    bpm.getPropertiesProviderModule(),
-
-                    bpmn.getMiniMapModule(),
-
+                    bpm.getPropertiesProviderModule()                   
                 ],
 
                 propertiesPanel: {
@@ -177,11 +175,6 @@ Use this package is very very simple and fast.
                     return;
 
                 }
-
-
-
-                modeler.get('minimap').open();
-
             });
 
         }
